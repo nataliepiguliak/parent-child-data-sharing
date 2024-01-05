@@ -1,5 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { User } from '../../models/user';
+import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
 
 @Component({
@@ -9,7 +8,4 @@ import { NgIf } from '@angular/common';
   templateUrl: './user-item.component.html',
   styleUrl: './user-item.component.scss',
 })
-export class UserItemComponent {
-  @Input() user: User | null = null;
-  @Output() selectUser = new EventEmitter<User>();
-}
+export class UserItemComponent {}

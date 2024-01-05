@@ -1,6 +1,2 @@
 <h3>Users</h3>
-<app-user-item
-  *ngFor="let user of users"
-  [user]="user"
-  (selectUser)="handleSelectUser($event)"
-></app-user-item>
+<app-user-item *ngFor="let user of users"></app-user-item>
